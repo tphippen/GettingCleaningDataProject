@@ -70,7 +70,7 @@ The dimensions of this set are 10299 x 68
 melt function from the reshape2 package. fullMelt has 3 identifier (ID) 
 variables (subjectID, activityLabel, and variable) and one measured variable.
 Each row represents one observation of one variable. The dimensions of this set
-are 679734 X 68
+are 679734 X 4
 3. TidyData: This data has been aggregated by mean and reshaped. Variable names
 have been cleaned and rendered more descriptive. The dimensions of this set are
 180 x 68.
@@ -78,14 +78,14 @@ have been cleaned and rendered more descriptive. The dimensions of this set are
 TidySamsungGalaxyData.txt
 -------------------------
 run_analysis.R writes TidyData to a space delimited .txt file with the command   
-write.table(TidyData,"TidySamsungGalaxyData.txt",sep = " ",row.names = FALSE)  
+`write.table(TidyData,"TidySamsungGalaxyData.txt",sep = " ",row.names = FALSE)`  
 
 In addition to including TidySamsungGalaxyData.txt in this respository, it has
 been uploaded to the Getting and Cleaning Data course website for evaluation.
-Rather than evaluating it's tidiness using the URI provided by the course 
+Rather than evaluating its tidiness using the URI provided by the course 
 website, you may want to veiw it in this repository or load as an R data frame 
 using the command    
-TidyData <- read.table("TidySamsungGalaxyData.txt", header = TRUE)
+`TidyData <- read.table("TidySamsungGalaxyData.txt", header = TRUE)`
 
 CodeBook.md
 -----------

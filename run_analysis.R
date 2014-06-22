@@ -52,7 +52,8 @@ subjectTest <- read.table("./UCI_HAR_Data/UCI HAR Dataset/test/subject_test.txt"
 activityLabelMap <- read.table("./UCI_HAR_Data/UCI HAR Dataset/activity_labels.txt", 
                                colClasses = c("numeric","character"))
 
-# Read features into data frame. These features will be the names of the data columns for fullSet
+# Read features into data frame. These features will be the names of the data columns for 
+# the merged data set
 features <- read.table("./UCI_HAR_Data/UCI HAR Dataset/features.txt", colClasses = "character")
 
 # STEP 2: Merge the training and test data sets
@@ -137,9 +138,9 @@ cleanName <- function(x) {
     x <- gsub(".std", "StandardDeviation", x,fixed = TRUE)
     # replace all remaining "." with ""
     x <- gsub(".","", x,fixed = TRUE)
-    # Replace all occurrences of "f" at beginning of each variable name with "frequency"
+    # Replace the occurrence of "f" at beginning of a variable name with "Frequency"
     x <- sub("^f", "Frequency", x)
-    # Replace all occurrences of "t" at beginning of each variable name with "time"
+    # Replace all occurrences of "t" at beginning of a variable name with "Time"
     x <- sub("^t", "Time", x)
     # Replace all occurrences of "Acc" with "Accelerometer"
     x <- sub("Acc", "Accelerometer", x, fixed = TRUE)

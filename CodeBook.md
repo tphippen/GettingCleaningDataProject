@@ -84,7 +84,7 @@ The 561 Features
 Jorge L. Reyes-Ortiz and colleagues generated 561 features by processing the raw
 signal data. In ./UCI_HAR_Data/UCI HAR Dataset/features_info.txt, they provide 
 details regarding how this processing was done, as well as their naming 
-convention for the faetures. I excerpted this information from   
+convention for the features. I excerpted this information from   
 ./UCI_HAR_Data/UCI HAR Dataset/features_info.txt and have included it here.
 
 > The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -290,7 +290,7 @@ Tidy Data Set Variables
 ### Variable Units
 All of the original 561 features were normalized and bounded within 
 [-1,1]. This stripped the units. Therefore all variables in the tidy data set are
-untitless.
+unitless.
 
 ### Variable Names
 

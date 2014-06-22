@@ -82,8 +82,9 @@ write.table(TidyData,"TidySamsungGalaxyData.txt",sep = " ",row.names = FALSE)
 
 In addition to including TidySamsungGalaxyData.txt in this respository, it has
 been uploaded to the Getting and Cleaning Data course website for evaluation.
-to evaluate it's tidiness or just check out the data contained
-in the set, you may want to load it into an R data frame using the command  
+Rather than evaluating it's tidiness using the URI provided by the course 
+website, you may want to veiw it in this repository or load as an R data frame 
+using the command    
 TidyData <- read.table("TidySamsungGalaxyData.txt", header = TRUE)
 
 CodeBook.md

@@ -141,9 +141,6 @@ sample. These are used on the angle() variable:
 > tBodyGyroMean    
 > tBodyGyroJerkMean    
 
-As mentioned above, ./UCI_HAR_Data/UCI HAR Dataset/features.txt contains a list 
-of the 561 features.
-
 Details on the Accomplishment of Project Goals
 ----------------------------------------------
 ### Goal 1: Merge the training and test set data
@@ -290,11 +287,18 @@ using the command
 
 Tidy Data Set Variables
 -----------------------
+### Variable Units
+All of the original 561 features were normalized and bounded within 
+[-1,1]. This stripped the units. Therefore all variables in the tidy data set are
+untitless.
+
+### Variable Names
+
 Variable names are listed below. All variable names are prefaced by "mean" since
 each variable is the mean of one of the original 561 features. 
 
-If the variable name contains
-an additional "Mean" - the original faeture was the mean of a measurement    
+If the variable name contains   
+an additional "Mean" - the original feature was the mean of a measurement    
 "StandardDeviation" - the original feature was the standard deviation of a
 meaurement
 
@@ -319,34 +323,34 @@ If the variable name contains
 "Body" - corresponds to the body component of an acceleration signal   
 "Gravity" - corresponds to the gravity component of an acceleration signal   
 
-If the variabl name contains   
+If the variable name contains   
 "Jerk" - the measurement pertains to acceleration over time
 
 If the variable names contains
-"Magnitude" - the measurement is the mean of the Euclidean magnitude
+"Magnitude" - refers to Euclidean magnitude of a measurement
 
 1. subjectID - the subject identifier, a number between 1 and 30 inclusive
 2. activityLabel - the activity performed by the subject while by being measured.
 Activities include "walking", "walking upstairs", "walking downstairs", "sitting",
 "standing", and "laying"
-3. meanTimeBodyAccelerometerMeanX                                 
+3. meanTimeBodyAccelerometerMeanX                                  
 4. meanTimeBodyAccelerometerMeanY                                 
-5. meanTimeBodyAccelerometerMeanZ                                  
-6. meanTimeBodyAccelerometerStandardDeviationX                    
-7. meanTimeBodyAccelerometerStandardDeviationY                     
-8. meanTimeBodyAccelerometerStandardDeviationZ                     
-9. meanTimeGravityAccelerometerMeanX                               
+5. meanTimeBodyAccelerometerMeanZ                               
+6. meanTimeBodyAccelerometerStandardDeviationX                   
+7. meanTimeBodyAccelerometerStandardDeviationY                
+8. meanTimeBodyAccelerometerStandardDeviationZ                   
+9. meanTimeGravityAccelerometerMeanX                        
 10. meanTimeGravityAccelerometerMeanY                               
 11. meanTimeGravityAccelerometerMeanZ                               
 12. meanTimeGravityAccelerometerStandardDeviationX                  
 13. meanTimeGravityAccelerometerStandardDeviationY                  
-14. meanTimeGravityAccelerometerStandardDeviationZ                  
+14. meanTimeGravityAccelerometerStandardDeviationZ                 
 15. meanTimeBodyAccelerometerJerkMeanX                              
 16. meanTimeBodyAccelerometerJerkMeanY                              
-17. meanTimeBodyAccelerometerJerkMeanZ                              
-18. meanTimeBodyAccelerometerJerkStandardDeviationX                 
-19. meanTimeBodyAccelerometerJerkStandardDeviationY                 
-20. meanTimeBodyAccelerometerJerkStandardDeviationZ                 
+17. meanTimeBodyAccelerometerJerkMeanZ                             
+18. meanTimeBodyAccelerometerJerkStandardDeviationX                
+19. meanTimeBodyAccelerometerJerkStandardDeviationY                
+20. meanTimeBodyAccelerometerJerkStandardDeviationZ               
 21. meanTimeBodyGyroscopeMeanX                                      
 22. meanTimeBodyGyroscopeMeanY                                      
 23. meanTimeBodyGyroscopeMeanZ                                      

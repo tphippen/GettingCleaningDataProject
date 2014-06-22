@@ -287,3 +287,111 @@ Rather than evaluating its tidiness using the URI provided by the course
 website, you may want to veiw it in this repository or load as an R data frame 
 using the command    
 `TidyData <- read.table("TidySamsungGalaxyData.txt", header = TRUE)`
+
+Tidy Data Set Variables
+-----------------------
+Variable names are listed below. All variable names are prefaced by "mean" since
+each variable is the mean of one of the original 561 features. 
+
+If the variable name contains
+an additional "Mean" - the original faeture was the mean of a measurement    
+"StandardDeviation" - the original feature was the standard deviation of a
+meaurement
+
+If the variable name is terminated by           
+"X" - indicates measurement of movement in the X direction  
+"Y" - indicates measurement of movement in the Y direction  
+"Z" - indicates measurement of movement in the Z direction  
+
+If the variable name contains       
+"Accelerometer" - indicates that the raw data used to derive this meausrement was
+obtained with an accelerometer   
+"Gyroscope" - indicates that the raw date used to derive this measurement was
+obtained with a gyroscope   
+
+If the variable name contains       
+"Frequency" - indicates that the raw data used to generate this measurement was 
+converted from time to frequency using a fast Fourier transform.   
+"Time" - indicates that the raw data used to generate this measurement was NOT
+converted using a fast Fourier transform.
+   
+If the variable name contains      
+"Body" - corresponds to the body component of an acceleration signal   
+"Gravity" - corresponds to the gravity component of an acceleration signal   
+
+If the variabl name contains   
+"Jerk" - the measurement pertains to acceleration over time
+
+If the variable names contains
+"Magnitude" - the measurement is the mean of the Euclidean magnitude
+
+1. subjectID - the subject identifier, a number between 1 and 30 inclusive
+2. activityLabel - the activity performed by the subject while by being measured.
+Activities include "walking", "walking upstairs", "walking downstairs", "sitting",
+"standing", and "laying"
+3. meanTimeBodyAccelerometerMeanX                                 
+4. meanTimeBodyAccelerometerMeanY                                 
+5. meanTimeBodyAccelerometerMeanZ                                  
+6. meanTimeBodyAccelerometerStandardDeviationX                    
+7. meanTimeBodyAccelerometerStandardDeviationY                     
+8. meanTimeBodyAccelerometerStandardDeviationZ                     
+9. meanTimeGravityAccelerometerMeanX                               
+10. meanTimeGravityAccelerometerMeanY                               
+11. meanTimeGravityAccelerometerMeanZ                               
+12. meanTimeGravityAccelerometerStandardDeviationX                  
+13. meanTimeGravityAccelerometerStandardDeviationY                  
+14. meanTimeGravityAccelerometerStandardDeviationZ                  
+15. meanTimeBodyAccelerometerJerkMeanX                              
+16. meanTimeBodyAccelerometerJerkMeanY                              
+17. meanTimeBodyAccelerometerJerkMeanZ                              
+18. meanTimeBodyAccelerometerJerkStandardDeviationX                 
+19. meanTimeBodyAccelerometerJerkStandardDeviationY                 
+20. meanTimeBodyAccelerometerJerkStandardDeviationZ                 
+21. meanTimeBodyGyroscopeMeanX                                      
+22. meanTimeBodyGyroscopeMeanY                                      
+23. meanTimeBodyGyroscopeMeanZ                                      
+24. meanTimeBodyGyroscopeStandardDeviationX                         
+25. meanTimeBodyGyroscopeStandardDeviationY                         
+26. meanTimeBodyGyroscopeStandardDeviationZ                         
+27. meanTimeBodyGyroscopeJerkMeanX                                  
+28. meanTimeBodyGyroscopeJerkMeanY                                  
+29. meanTimeBodyGyroscopeJerkMeanZ                                  
+30. meanTimeBodyGyroscopeJerkStandardDeviationX                     
+31. meanTimeBodyGyroscopeJerkStandardDeviationY                     
+32. meanTimeBodyGyroscopeJerkStandardDeviationZ                     
+33. meanTimeBodyAccelerometerMagnitudeMean                          
+34. meanTimeBodyAccelerometerMagnitudeStandardDeviation             
+35. meanTimeGravityAccelerometerMagnitudeMean                       
+36. meanTimeGravityAccelerometerMagnitudeStandardDeviation          
+37. meanTimeBodyAccelerometerJerkMagnitudeMean                      
+38. meanTimeBodyAccelerometerJerkMagnitudeStandardDeviation         
+39. meanTimeBodyGyroscopeMagnitudeMean                              
+40. meanTimeBodyGyroscopeMagnitudeStandardDeviation                 
+41. meanTimeBodyGyroscopeJerkMagnitudeMean                          
+42. meanTimeBodyGyroscopeJerkMagnitudeStandardDeviation             
+43. meanFrequencyBodyAccelerometerMeanX                             
+44. meanFrequencyBodyAccelerometerMeanY                             
+45. meanFrequencyBodyAccelerometerMeanZ                             
+46. meanFrequencyBodyAccelerometerStandardDeviationX                
+47. meanFrequencyBodyAccelerometerStandardDeviationY                
+48. meanFrequencyBodyAccelerometerStandardDeviationZ                
+49. meanFrequencyBodyAccelerometerJerkMeanX                         
+50. meanFrequencyBodyAccelerometerJerkMeanY                         
+51. meanFrequencyBodyAccelerometerJerkMeanZ                         
+52. meanFrequencyBodyAccelerometerJerkStandardDeviationX            
+53. meanFrequencyBodyAccelerometerJerkStandardDeviationY            
+54. meanFrequencyBodyAccelerometerJerkStandardDeviationZ            
+55. meanFrequencyBodyGyroscopeMeanX                                 
+56. meanFrequencyBodyGyroscopeMeanY                                 
+57. meanFrequencyBodyGyroscopeMeanZ                                 
+58. meanFrequencyBodyGyroscopeStandardDeviationX                   
+59. meanFrequencyBodyGyroscopeStandardDeviationY                    
+60. meanFrequencyBodyGyroscopeStandardDeviationZ                    
+61. meanFrequencyBodyAccelerometerMagnitudeMean                     
+62. meanFrequencyBodyAccelerometerMagnitudeStandardDeviation        
+63. meanFrequencyBodyBodyAccelerometerJerkMagnitudeMean             
+64. FrequencyBodyBodyAccelerometerJerkMagnitudeStandardDeviation
+65. meanFrequencyBodyBodyGyroscopeMagnitudeMean                     
+66. meanFrequencyBodyBodyGyroscopeMagnitudeStandardDeviation        
+67. meanFrequencyBodyBodyGyroscopeJerkMagnitudeMean                 
+68. meanFrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation 

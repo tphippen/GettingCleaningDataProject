@@ -13,7 +13,9 @@
 # 3) TidyData: Data has been aggregated by mean and variable names rendered more 
 # descriptive than those attached to the original data. 
 
-# This script writes TidyData to a space delimited file, "TidySamsungGalaxyData.txt" 
+# This script writes TidyData to a space delimited file, "TidySamsungGalaxyData.txt"
+# using the write.table() function. It can be read into R using the following command
+# read.table("TidySamsungGalaxyData.txt", header = TRUE)
 
 # Additional packages required for running of script 
 library(reshape2)

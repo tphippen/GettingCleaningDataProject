@@ -91,8 +91,8 @@ mergedSet$subjectID <- factor(as.character(mergedSet$subjectID), labels = as.cha
 # Melt the data using subjectID and activityLabel as ID variables.
 # According to the Wickham paper referenced in the comment above,in this form, 
 # the resulting data set is tidy. There are 3 identifier (ID) variables (subjectID, 
-#activityLabel, and subjectID) and one measured variable. Each row represents one observation of
-# one variable. 
+# activityLabel, and variable) and one measured variable. Each row represents 
+# one observation of one variable. 
 fullMelt <- melt(mergedSet, id = c("subjectID","activityLabel"))
 
 # The head of fullSet looks like this:
@@ -159,7 +159,7 @@ names(TidyData)[c(-1,-2)] <- paste("mean",names(TidyData)[c(-1,-2)], sep = "")
 # "walking_downstairs" with a space
 TidyData$activityLabel <- sub("_"," ",TidyData$activityLabel, fixed = TRUE)
 
-# STEP 9: Write tidy data set to .txt file. Space selected as delimiter
+# STEP 8: Write tidy data set to .txt file. Space selected as delimiter
 write.table(TidyData,"TidySamsungGalaxyData.txt",sep = " ",row.names = FALSE)
 
 # Delete data frames and vectors that are no longer needed to free up memory
